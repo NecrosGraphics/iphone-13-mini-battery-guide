@@ -23,8 +23,8 @@ Not every tip will make a dramatic difference on its own. Battery life comes fro
 ### Check your battery health first
 Go to **Settings > Battery > Battery Health & Charging**. Maximum Capacity shows how much of the original capacity your battery still holds. If it has dropped well below 80%, no setting will fully fix poor battery life. A battery replacement is the real solution at that point.
 
-### Use Dark Mode and a dark wallpaper
-The 13 mini has an OLED display, where black pixels use almost no power. Dark Mode and a dark wallpaper save energy whenever the screen is on. The effect depends on how much of what you see is actually dark, so it won't transform battery life, but it's free.
+### Use Dark Mode, dark apps and a mostly black wallpaper
+The 13 mini has an OLED display, where black pixels use almost no power. Pick a wallpaper that is mostly pure black (#000000) with some detail, and switch on dark or OLED themes in the apps that offer them. True black saves more than dark grey, which still lights the pixels. It only helps while the screen is on, so it won't transform battery life on its own, but it's free.
 
 - **Settings > Display & Brightness > Dark**
 
@@ -39,7 +39,7 @@ Many apps ask for more location access than they need. Set apps to **While Using
 - **Settings > Privacy & Security > Location Services**
 
 ### Other quick wins
-- **Turn on Auto-Brightness** (Settings > Accessibility > Display & Text Size). The screen is one of the biggest power draws, so keep brightness only as high as you need.
+- **Auto-Brightness** (Settings > Accessibility > Display & Text Size) is a sensible default. Setting brightness low by hand can save more if you keep it low, since the screen is one of the biggest power draws.
 - **Turn off Raise to Wake** (Settings > Display & Brightness) if you find the screen lighting up when you don't need it.
 - **Trim notifications.** Each notification wakes the screen. Turn them off for apps you don't need alerts from.
 - **Prefer Wi-Fi to cellular** when it's available, since it generally uses less power.
@@ -103,8 +103,29 @@ How to set one up:
 
 Note that iOS turns Low Power Mode off by itself once the phone charges past about 80%, so an automation that switches it on can be overridden by charging.
 
-### Your own advanced finds
-*Add your own tweaks here, each with: what it does, how to set it up, and any trade-offs.*
+### Reduce White Point for an extra-dim screen
+- **Settings > Accessibility > Display & Text Size > Reduce White Point**
+
+It reduces the intensity of bright colors, so the screen can go dimmer than the normal minimum brightness. On an OLED a dimmer screen should draw less power, though the exact savings vary. **Trade-off:** hard to read in sunlight, and a high value combined with minimum brightness can leave the screen too dark to read.
+
+For quick toggling, add it under Settings > Accessibility > Accessibility Shortcut, then triple-click the side button. One user runs it at 60%.
+
+### Night and morning automations
+Some people schedule a bedtime automation that turns off Wi-Fi and Bluetooth and turns on Low Power Mode and Airplane Mode, then reverses it at wake-up time (for example, Wi-Fi on and mobile data off at a workplace with good Wi-Fi and poor signal).
+
+- Phones already use little power overnight, so the extra saving over Low Power Mode alone may be small.
+- Airplane Mode means no calls, texts or emergency alerts overnight. Alarms still work.
+- Check that Shortcuts offers each action you want (Set Airplane Mode, Set Wi-Fi, Set Bluetooth, Set Cellular Data, Set Low Power Mode). A Location Services toggle may not exist.
+- Use a Time of Day trigger and choose Run Immediately.
+
+### Download offline maps before a trip
+- **Maps > your profile picture > Offline Maps > Download New Map**
+
+Download over Wi-Fi first. It helps most in areas with weak signal, where the cellular radio works hard. Navigation still uses GPS and the screen, which are the main drains, so the savings are modest. Maps take up storage.
+
+### Small effects
+- **Reduce Motion** (Settings > Accessibility > Motion) cuts screen animations. It's mainly a comfort setting, and its battery effect is small and unproven.
+- **Home screen widgets** get a limited refresh budget from iOS, so removing them saves little. Location-based widgets and Live Activities cost more.
 
 ---
 
@@ -112,7 +133,7 @@ Note that iOS turns Low Power Mode off by itself once the phone charges past abo
 
 **Do these first:**
 1. Check Battery Health.
-2. Dark Mode plus a dark wallpaper.
+2. Dark Mode, a mostly black wallpaper and dark app themes.
 3. 5G Auto.
 4. Location Services to While Using or Never.
 5. Background App Refresh off for apps that don't need it.
