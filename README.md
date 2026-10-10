@@ -1,1 +1,133 @@
-# iphone-13-mini-battery-guide
+# iPhone 13 mini Battery Guide
+
+A practical guide to getting the most out of the iPhone 13 mini's battery, from simple settings anyone can change to more advanced automations.
+
+> **Heads up:** menu names and paths can shift slightly between iOS versions. This guide was written on iOS 27. If a setting isn't where it says, use the search bar at the top of the Settings app.
+
+## How to use this guide
+
+The tips are split into three tiers. Start at the top and go as far as you like.
+
+| Tier | What it covers | Effort |
+|------|----------------|--------|
+| 1. Basics | Settings that cost you nothing | 5 minutes |
+| 2. Charging habits | Slowing down battery aging | Ongoing habit |
+| 3. Advanced | Automations and background tuning | 15+ minutes |
+
+Not every tip will make a dramatic difference on its own. Battery life comes from many small savings adding up, so treat this as a menu and not a checklist.
+
+---
+
+## Tier 1: Basics
+
+### Check your battery health first
+Go to **Settings > Battery > Battery Health & Charging**. Maximum Capacity shows how much of the original capacity your battery still holds. If it has dropped well below 80%, no setting will fully fix poor battery life. A battery replacement is the real solution at that point.
+
+### Use Dark Mode and a dark wallpaper
+The 13 mini has an OLED display, where black pixels use almost no power. Dark Mode and a dark wallpaper save energy whenever the screen is on. The effect depends on how much of what you see is actually dark, so it won't transform battery life, but it's free.
+
+- **Settings > Display & Brightness > Dark**
+
+### Set cellular to 5G Auto
+5G can use more power than LTE, especially with a weak or unstable signal where the phone keeps switching between networks. **5G Auto** uses 5G only when the benefit outweighs the battery cost, which is the right choice for most people. If your 5G coverage is poor, switching to LTE may save more.
+
+- **Settings > Cellular > Cellular Data Options > Voice & Data**
+
+### Tighten Location Services
+Many apps ask for more location access than they need. Set apps to **While Using** or **Never** unless they genuinely need background access (navigation apps, for example). For apps that only need your general area, turn off **Precise Location**.
+
+- **Settings > Privacy & Security > Location Services**
+
+### Other quick wins
+- **Turn on Auto-Brightness** (Settings > Accessibility > Display & Text Size). The screen is one of the biggest power draws, so keep brightness only as high as you need.
+- **Turn off Raise to Wake** (Settings > Display & Brightness) if you find the screen lighting up when you don't need it.
+- **Trim notifications.** Each notification wakes the screen. Turn them off for apps you don't need alerts from.
+- **Prefer Wi-Fi to cellular** when it's available, since it generally uses less power.
+- **Use Low Power Mode** (Settings > Battery) when you're running low. It reduces background activity and some visual effects.
+
+---
+
+## Tier 2: Charging habits
+
+### Leave Optimized Battery Charging on
+It is on by default. Optimized Battery Charging learns your daily routine and tries to reduce the time your phone spends fully charged, while aiming to be at 100% when you usually unplug.
+
+- **Settings > Battery > Battery Health & Charging > Optimized Battery Charging**
+
+> **Important:** the iPhone 13 mini does **not** have a true charge limit. The hard 80% Charge Limit setting exists only on iPhone 15 models and later. On the 13 mini, if you see a message about charging to 80%, that is Optimized Battery Charging pausing at 80% and finishing to 100% later. It does not stop there permanently.
+
+### Optional: unplug around 80%
+Some people unplug at about 80% when they're awake and nearby. Lower charge levels put less stress on a lithium-ion cell, so this may reduce wear over time. The trade-off is less battery on hand, and how much it helps in practice is debated. Treat it as an optional habit rather than a requirement.
+
+### Keep it cool
+Heat is the biggest enemy of a lithium-ion battery.
+
+- Don't charge the phone under a pillow, in a thick case that traps heat, or in a hot car.
+- Take the case off if the phone feels warm while charging.
+- Avoid leaving the phone in direct sun or in very cold conditions.
+
+### Consider slower charging
+Faster chargers generate more heat during charging, and heat is what ages the battery. Using a slow 5W charger for routine or overnight charging keeps the phone cooler. You trade speed for less heat. Keep a faster charger around for the days you need a quick top-up.
+
+### Avoid draining to 0%
+Regularly running the battery completely flat is harder on it than shallower charge cycles. Topping up during the day is fine.
+
+---
+
+## Tier 3: Advanced
+
+### Reduce background activity
+Apps that refresh in the background wake the phone and use power.
+
+**Background App Refresh**
+- **Settings > General > Background App Refresh**
+- Turn it off for apps that don't need to update when you're not using them, or set it to Wi-Fi only.
+
+**Mail fetch settings**
+- **Settings > Mail > Mail Accounts > Fetch New Data**
+- Push delivers mail as it arrives and can be efficient for accounts that support it. For accounts that rely on Fetch, a longer interval or **Manually** uses the least power, at the cost of delayed mail.
+
+### Automate Low Power Mode with Shortcuts
+The Shortcuts app can switch Low Power Mode on for you. Shortcuts does not have a true "phone is idle" trigger, so use one of these instead:
+
+- **Sleep Focus:** turn Low Power Mode on when your Sleep Focus begins.
+- **Time of Day:** turn it on at a set time each evening.
+- **Battery Level:** turn it on automatically when the battery drops below a level you choose (for example, 30%).
+- **Charger:** run an automation when the phone is plugged in or unplugged.
+
+How to set one up:
+1. Open **Shortcuts > Automation > New Automation**.
+2. Choose a trigger from the list above.
+3. Add the action **Set Low Power Mode > On**.
+4. Choose **Run Immediately** so it doesn't ask for confirmation each time.
+
+Note that iOS turns Low Power Mode off by itself once the phone charges past about 80%, so an automation that switches it on can be overridden by charging.
+
+### Your own advanced finds
+*Add your own tweaks here, each with: what it does, how to set it up, and any trade-offs.*
+
+---
+
+## Quick reference
+
+**Do these first:**
+1. Check Battery Health.
+2. Dark Mode plus a dark wallpaper.
+3. 5G Auto.
+4. Location Services to While Using or Never.
+5. Background App Refresh off for apps that don't need it.
+6. Keep the phone cool while charging.
+
+**What doesn't apply to the 13 mini:** the built-in 80% Charge Limit slider (iPhone 15 and newer only).
+
+## Disclaimer
+
+This guide is based on general lithium-ion battery behavior and Apple's published documentation. Results vary by phone age, battery condition, carrier, and usage. This is not an official Apple resource.
+
+## Contributing
+
+Spotted a mistake or have a tweak that helped you? Open an issue or pull request.
+
+## License
+
+MIT

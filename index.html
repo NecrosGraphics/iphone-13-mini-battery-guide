@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iPhone 13 mini Battery Guide</title>
+<meta name="description" content="Simple settings, charging habits and automations to get more out of the iPhone 13 mini battery.">
+<style>
+:root{
+  --bg:#f6f8fb; --fg:#12171f; --muted:#556070; --accent:#2a5f94; --tint:#dfe9f4;
+  --card:#ffffff; --line:#d5dde8; --note:#fdeee9; --note-line:#e9a894;
+  --font:ui-rounded,"SF Pro Rounded","SF Pro Display",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#000; --fg:#eef2f7; --muted:#9aa6b6; --accent:#8fbbe6; --tint:#12202f;
+    --card:#0b0f14; --line:#222b36; --note:#241510; --note-line:#8a4b38;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:1.0625rem;line-height:1.6}
+a{color:var(--accent)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+/* sticky header with the reading-progress battery */
+header.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:40rem;margin:0 auto;padding:.7rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.bar-title{font-weight:600;font-size:.95rem}
+.batt{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.cell{position:relative;width:2.6rem;height:1.15rem;border:2px solid var(--fg);border-radius:.38rem;padding:2px}
+.cell::after{content:"";position:absolute;right:-.42rem;top:50%;width:.22rem;height:.45rem;margin-top:-.225rem;background:var(--fg);border-radius:0 2px 2px 0}
+.fill{height:100%;width:0%;background:var(--accent);border-radius:.15rem;transition:width .15s linear}
+
+main{max-width:40rem;margin:0 auto;padding:0 1.25rem 4rem}
+
+/* hero */
+.hero{padding:3.5rem 0 2rem}
+.hero h1{font-size:clamp(2.4rem,9vw,3.6rem);line-height:1.05;margin:0 0 1rem;letter-spacing:-.02em}
+.hero p{font-size:1.2rem;color:var(--muted);margin:0 0 1.5rem;max-width:32rem}
+.jump{display:grid;gap:.6rem}
+.jump a{display:flex;justify-content:space-between;gap:1rem;padding:.9rem 1.1rem;background:var(--card);border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--fg)}
+.jump a:hover{border-color:var(--accent)}
+.jump b{font-weight:600}
+.jump span{color:var(--muted);font-size:.95rem}
+
+section{padding-top:2.5rem}
+h2{font-size:1.7rem;line-height:1.2;margin:0 0 .4rem;letter-spacing:-.01em}
+.lead{color:var(--muted);margin:0 0 1.2rem}
+h3{font-size:1.1rem;margin:0 0 .3rem}
+.tip{padding:1rem 0 1rem 1.1rem;border-left:3px solid var(--tint);margin:0 0 .4rem}
+.tip p{margin:.2rem 0}
+.tip ul{margin:.4rem 0 0;padding-left:1.2rem}
+code{font-family:var(--mono);font-size:.84em;background:var(--tint);padding:.12em .4em;border-radius:6px;word-break:break-word}
+.note{background:var(--note);border:1px solid var(--note-line);border-radius:14px;padding:1rem 1.15rem;margin:1.2rem 0}
+.note h3{margin-bottom:.2rem}
+.note p{margin:0}
+ol.steps{padding-left:1.3rem;margin:.5rem 0 0}
+ol.steps li{margin:.25rem 0}
+.tick{list-style:none;padding:0;margin:.5rem 0 0}
+.tick li{padding:.45rem 0 .45rem 2rem;position:relative;border-bottom:1px solid var(--line)}
+.tick li::before{content:"";position:absolute;left:.2rem;top:.8rem;width:.9rem;height:.5rem;border-left:3px solid var(--accent);border-bottom:3px solid var(--accent);transform:rotate(-45deg)}
+.na{margin-top:1.2rem;padding:1rem 1.15rem;background:var(--card);border:1px solid var(--line);border-radius:14px}
+footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+footer p{margin:.4rem 0}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="bar-in">
+    <span class="bar-title">13 mini battery guide</span>
+    <div class="batt" aria-hidden="true"><span id="pct">0%</span><div class="cell"><div class="fill" id="fill"></div></div></div>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>Make the 13&nbsp;mini last.</h1>
+    <p>Settings, charging habits and automations for the iPhone 13 mini, from five-minute fixes to deeper tuning. The battery in the corner fills as you read.</p>
+    <nav class="jump" aria-label="Guide sections">
+      <a href="#basics"><b>Basics</b><span>5 minutes</span></a>
+      <a href="#charging"><b>Charging habits</b><span>ongoing</span></a>
+      <a href="#advanced"><b>Advanced</b><span>15+ minutes</span></a>
+    </nav>
+  </div>
+
+  <p class="lead">Menu names can shift between iOS versions. This guide was written on iOS 27. If a setting isn't where it says, use the search bar in Settings. No single tip is dramatic on its own: battery life comes from small savings adding up.</p>
+
+  <section id="basics">
+    <h2>Basics</h2>
+    <p class="lead">Free settings anyone can change.</p>
+
+    <article class="tip">
+      <h3>Check your battery health first</h3>
+      <p><code>Settings &gt; Battery &gt; Battery Health &amp; Charging</code></p>
+      <p>Maximum Capacity shows how much of the original capacity is left. If it has fallen well below 80%, no setting fully fixes it, and a battery replacement is the real solution.</p>
+    </article>
+
+    <article class="tip">
+      <h3>Use Dark Mode and a dark wallpaper</h3>
+      <p><code>Settings &gt; Display &amp; Brightness &gt; Dark</code></p>
+      <p>The 13 mini has an OLED display, where black pixels use almost no power. It helps whenever the screen is on, but it won't transform battery life on its own.</p>
+    </article>
+
+    <article class="tip">
+      <h3>Set cellular to 5G Auto</h3>
+      <p><code>Settings &gt; Cellular &gt; Cellular Data Options &gt; Voice &amp; Data</code></p>
+      <p>5G can use more power than LTE, especially with a weak signal. 5G Auto uses 5G only when it's worth the battery cost. If your 5G coverage is poor, LTE may save more.</p>
+    </article>
+
+    <article class="tip">
+      <h3>Tighten Location Services</h3>
+      <p><code>Settings &gt; Privacy &amp; Security &gt; Location Services</code></p>
+      <p>Set apps to While Using or Never unless they truly need background access, like navigation. Turn off Precise Location for apps that only need your general area.</p>
+    </article>
+
+    <article class="tip">
+      <h3>Other quick wins</h3>
+      <ul>
+        <li>Turn on Auto-Brightness in <code>Accessibility &gt; Display &amp; Text Size</code>.</li>
+        <li>Turn off Raise to Wake if the screen lights up when you don't need it.</li>
+        <li>Trim notifications. Each one wakes the screen.</li>
+        <li>Prefer Wi-Fi over cellular when it's available.</li>
+        <li>Use Low Power Mode when the battery runs low.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="charging">
+    <h2>Charging habits</h2>
+    <p class="lead">Slowing down battery aging.</p>
+
+    <article class="tip">
+      <h3>Leave Optimized Battery Charging on</h3>
+      <p><code>Settings &gt; Battery &gt; Battery Health &amp; Charging</code></p>
+      <p>It's on by default. It learns your routine and reduces the time the phone sits fully charged, while aiming for 100% when you usually unplug.</p>
+    </article>
+
+    <div class="note" role="note">
+      <h3>The 13 mini has no true charge limit</h3>
+      <p>The hard 80% Charge Limit exists only on iPhone 15 and newer. If your 13 mini says it's charging to 80%, that's Optimized Battery Charging pausing there and finishing to 100% later. It doesn't stop permanently.</p>
+    </div>
+
+    <article class="tip">
+      <h3>Optional: unplug around 80%</h3>
+      <p>Lower charge levels put less stress on a lithium-ion cell, so this may reduce wear. The trade-off is less battery on hand, and how much it helps in practice is debated. Treat it as an optional habit.</p>
+    </article>
+
+    <article class="tip">
+      <h3>Keep it cool</h3>
+      <p>Heat is the biggest enemy of the battery.</p>
+      <ul>
+        <li>Don't charge under a pillow, in a hot car, or in direct sun.</li>
+        <li>Take the case off if the phone feels warm while charging.</li>
+      </ul>
+    </article>
+
+    <article class="tip">
+      <h3>Consider slower charging</h3>
+      <p>Faster chargers make more heat, and heat ages the battery. A slow 5W charger for routine or overnight charging keeps the phone cooler. Keep a faster one for days you need a quick top-up.</p>
+    </article>
+
+    <article class="tip">
+      <h3>Avoid draining to 0%</h3>
+      <p>Regularly running the battery flat is harder on it than shallower cycles. Topping up during the day is fine.</p>
+    </article>
+  </section>
+
+  <section id="advanced">
+    <h2>Advanced</h2>
+    <p class="lead">Background tuning and automations.</p>
+
+    <article class="tip">
+      <h3>Reduce background activity</h3>
+      <p>Apps that refresh in the background wake the phone and use power.</p>
+      <ul>
+        <li><code>Settings &gt; General &gt; Background App Refresh</code>: turn it off for apps that don't need it, or limit it to Wi-Fi.</li>
+        <li><code>Settings &gt; Mail &gt; Mail Accounts &gt; Fetch New Data</code>: Push can be efficient where supported. For Fetch accounts, a longer interval or Manually uses the least power, with delayed mail as the cost.</li>
+      </ul>
+    </article>
+
+    <article class="tip">
+      <h3>Automate Low Power Mode with Shortcuts</h3>
+      <p>Shortcuts has no true "phone is idle" trigger. Use one of these instead: Sleep Focus, Time of Day, Battery Level (for example, below 30%), or Charger.</p>
+      <ol class="steps">
+        <li>Open <code>Shortcuts &gt; Automation &gt; New Automation</code>.</li>
+        <li>Choose a trigger.</li>
+        <li>Add the action <code>Set Low Power Mode &gt; On</code>.</li>
+        <li>Choose Run Immediately so it doesn't ask each time.</li>
+      </ol>
+      <p>iOS turns Low Power Mode off by itself once the phone charges past about 80%, so charging can override the automation.</p>
+    </article>
+    <!-- Add your own advanced finds here as more <article class="tip"> blocks. -->
+
+    <div class="na"><b>Doesn't apply to the 13 mini:</b> the built-in 80% Charge Limit slider (iPhone 15 and newer only).</div>
+  </section>
+
+  <section id="recap">
+    <h2>Do these first</h2>
+    <ul class="tick">
+      <li>Check Battery Health.</li>
+      <li>Dark Mode plus a dark wallpaper.</li>
+      <li>Cellular on 5G Auto.</li>
+      <li>Location Services on While Using or Never.</li>
+      <li>Background App Refresh off for apps that don't need it.</li>
+      <li>Keep the phone cool while charging.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Based on general lithium-ion battery behavior and Apple's published documentation. Results vary by phone age, battery condition, carrier and usage. This is not an official Apple resource.</p>
+    <p>Spotted a mistake or have a tweak that helped? Open an issue or pull request on the repository.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var fill=document.getElementById('fill'),pct=document.getElementById('pct');
+  function update(){
+    var d=document.documentElement,max=d.scrollHeight-window.innerHeight;
+    var p=max>0?Math.min(100,Math.round(window.scrollY/max*100)):100;
+    fill.style.width=p+'%';pct.textContent=p+'%';
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  window.addEventListener('resize',update);
+  update();
+})();
+</script>
+</body>
+</html>
