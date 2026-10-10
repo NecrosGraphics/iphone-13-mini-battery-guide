@@ -1,10 +1,10 @@
-# iPhone 13 mini Battery Guide
+# 🔋 iPhone 13 mini Battery Guide
 
 A practical guide to getting the most out of the iPhone 13 mini's battery, from simple settings anyone can change to more advanced automations.
 
-> **Heads up:** menu names and paths can shift slightly between iOS versions. This guide was written on iOS 27. If a setting isn't where it says, use the search bar at the top of the Settings app.
+> ℹ️ **Heads up:** menu names and paths can shift slightly between iOS versions. This guide was written on iOS 27. If a setting isn't where it says, use the search bar at the top of the Settings app.
 
-## How to use this guide
+## 🧭 How to use this guide
 
 The tips are split into three tiers. Start at the top and go as far as you like.
 
@@ -18,7 +18,7 @@ Not every tip will make a dramatic difference on its own. Battery life comes fro
 
 ---
 
-## Tier 1: Basics
+## ⚙️ Tier 1: Basics
 
 ### Check your battery health first
 Go to **Settings > Battery > Battery Health & Charging**. Maximum Capacity shows how much of the original capacity your battery still holds. If it has dropped well below 80%, no setting will fully fix poor battery life. A battery replacement is the real solution at that point.
@@ -47,14 +47,14 @@ Many apps ask for more location access than they need. Set apps to **While Using
 
 ---
 
-## Tier 2: Charging habits
+## 🔌 Tier 2: Charging habits
 
 ### Leave Optimized Battery Charging on
 It is on by default. Optimized Battery Charging learns your daily routine and tries to reduce the time your phone spends fully charged, while aiming to be at 100% when you usually unplug.
 
 - **Settings > Battery > Battery Health & Charging > Optimized Battery Charging**
 
-> **Important:** the iPhone 13 mini does **not** have a true charge limit. The hard 80% Charge Limit setting exists only on iPhone 15 models and later. On the 13 mini, if you see a message about charging to 80%, that is Optimized Battery Charging pausing at 80% and finishing to 100% later. It does not stop there permanently.
+> ⚠️ **Important:** the iPhone 13 mini does **not** have a true charge limit. The hard 80% Charge Limit setting exists only on iPhone 15 models and later. On the 13 mini, if you see a message about charging to 80%, that is Optimized Battery Charging pausing at 80% and finishing to 100% later. It does not stop there permanently.
 
 ### Optional: unplug around 80%
 Some people unplug at about 80% when they're awake and nearby. Lower charge levels put less stress on a lithium-ion cell, so this may reduce wear over time. The trade-off is less battery on hand, and how much it helps in practice is debated. Treat it as an optional habit rather than a requirement.
@@ -74,7 +74,7 @@ Regularly running the battery completely flat is harder on it than shallower cha
 
 ---
 
-## Tier 3: Advanced
+## 🛠️ Tier 3: Advanced
 
 ### Reduce background activity
 Apps that refresh in the background wake the phone and use power.
@@ -129,7 +129,7 @@ Download over Wi-Fi first. It helps most in areas with weak signal, where the ce
 
 ---
 
-## Quick reference
+## ✅ Quick reference
 
 **Do these first:**
 1. Check Battery Health.
@@ -141,14 +141,14 @@ Download over Wi-Fi first. It helps most in areas with weak signal, where the ce
 
 **What doesn't apply to the 13 mini:** the built-in 80% Charge Limit slider (iPhone 15 and newer only).
 
-## Disclaimer
+## ℹ️ Disclaimer
 
 This guide is based on general lithium-ion battery behavior and Apple's published documentation. Results vary by phone age, battery condition, carrier, and usage. This is not an official Apple resource.
 
-## Contributing
+## 🤝 Contributing
 
 Spotted a mistake or have a tweak that helped you? Open an issue or pull request.
 
-## License
+## 📄 License
 
 MIT
