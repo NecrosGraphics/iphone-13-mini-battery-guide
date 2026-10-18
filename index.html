@@ -8,13 +8,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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土0PFi9e/IePYXzfKwGUUg8hRHjy5MnFp0+fenhDtH///kO9oXDzRQjgO+T/NTe+ZcuWfRIZGfn5++y+4XoBr1ZXAgC4evXqPUIIWK1Wsnv37tPfJO4NHwK8Ha6uri56+PBhEyJCSkpKTHBwcBT/7P+OgLa2tiZKqce7B8jOzs5wu90wevRoOTk5+cz7LB4RGaXU097e3mIIAux2+194XHOJ2+32GwAA6enp6wYMGBCg63o7Y0ynlHp6OngWuXTpks0Q7bDJZILjx4+v4u1sQ0PDcz8/P4iKirLit8TJkycTTSaTb5o1XxExceJEv0OHDu2llOozZsxYX15eftnpdFYdOHAgXZIkkY/6+ety3i7Pf0REqKqqqi8pKWk1zECEENLZ6ZWXl19esWJF2Lx584YjIgYGBgrf9pqGIgAAIDAwUHC5XJXh4eEml8tVuXr16k95iPBngt/k6G6K/EGrVB+UvYCIEBsb+6OgoKCBQUFBsqIokJSUdFKSJNA0DRCxcxLc0+HrJ2IfPA/zAeeECRPGud3uN7Nnz/7NnDlzFgqCAIZ65fW7EAAAcPHixe3t7e2NixYtCubK6DMwm82gqmrzhQsXfgvwn+lvn8H06dMHNTY21gQEBJB3PQ7rNYr1xUVjYmImbtiwYWZ9fT0SQvpG7He6qiRBfHz8CG8/6Ec/+tFr8W/FiTk/SJXrrwAAAABJRU5ErkJggg==">
 <script>document.documentElement.className+=" js"</script>
 <meta name="color-scheme" content="dark">
 <style>
 :root{
   --bg:#000; --panel:#080808; --panel2:#0f0f0f; --line:#1c1c1c; --line2:#2a2a2a;
   --fg:#f1f1f1; --muted:#8b8b8b; --gold:#ffd700; --glow:rgba(255,215,0,.32); --wash:rgba(255,215,0,.07);
+  --green:#32d74b; --green-glow:rgba(50,215,75,.35);
   --display:Orbitron,Eurostile,"Bank Gothic",ui-sans-serif,system-ui,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   --body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
@@ -27,24 +28,29 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
   background-image:linear-gradient(rgba(255,215,0,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,215,0,.045) 1px,transparent 1px);
   background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 0%,#000 25%,transparent 80%);mask-image:radial-gradient(ellipse 80% 70% at 50% 0%,#000 25%,transparent 80%)}
 a{color:var(--gold)}
-a:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+a:focus-visible,button:focus-visible,summary:focus-visible,.tick li:focus-visible,code.copyable:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
 svg.i{width:1.5rem;height:1.5rem;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 
 /* header */
 header.bar{position:sticky;top:0;z-index:5;background:rgba(0,0,0,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .bar-in{max-width:64rem;margin:0 auto;padding:.6rem 1.25rem;display:flex;align-items:center;gap:1rem}
-.brand{display:flex;align-items:center;gap:.6rem;font:700 .95rem var(--display);letter-spacing:.12em;color:var(--fg);text-decoration:none;white-space:nowrap}
-.brand img{height:2.7rem;width:auto;display:block;filter:drop-shadow(0 0 6px rgba(255,255,255,.3))}
+.brand{display:flex;align-items:center;gap:.6rem;font:700 .95rem var(--display);letter-spacing:.12em;color:var(--fg);text-decoration:none;white-space:nowrap;flex-shrink:0}
+.brand img{height:2.7rem;width:auto;display:block;filter:drop-shadow(0 0 6px rgba(255,255,255,.3));transition:filter .2s,transform .2s}
+.brand:hover img{filter:drop-shadow(0 0 12px rgba(255,255,255,.65));transform:scale(1.06)}
 .navp{display:flex;gap:.3rem;flex:1;justify-content:center;overflow-x:auto;scrollbar-width:none}
 .navp a{display:flex;align-items:center;gap:.45rem;padding:.5rem .8rem;border-radius:9px;font:500 .8rem var(--mono);color:var(--muted);text-decoration:none;white-space:nowrap;border:1px solid transparent;transition:color .15s,box-shadow .15s,background .15s}
 .navp a svg{width:1rem;height:1rem}
-.navp a:hover{color:var(--fg)}
+.navp a:hover{color:var(--fg);background:var(--panel2);box-shadow:0 0 14px rgba(255,215,0,.12)}
 .navp a.on{color:var(--gold);background:var(--wash);border-color:rgba(255,215,0,.28);box-shadow:0 0 16px rgba(255,215,0,.14)}
-.batt{display:flex;align-items:center;gap:.5rem;font:400 .78rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
-.cell{position:relative;width:2.4rem;height:1.05rem;border:2px solid var(--muted);border-radius:.35rem;padding:2px}
-.cell::after{content:"";position:absolute;right:-.4rem;top:50%;width:.2rem;height:.4rem;margin-top:-.2rem;background:var(--muted);border-radius:0 2px 2px 0}
-.fill{height:100%;width:0%;background:var(--gold);border-radius:.15rem;box-shadow:0 0 8px var(--glow)}
-.brand{flex-shrink:0}
+.batt{display:flex;align-items:center;gap:.5rem;font:400 .78rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums;transition:color .3s}
+.batt.full{color:var(--green)}
+.cell{position:relative;width:2.4rem;height:1.05rem;border:2px solid var(--muted);border-radius:.35rem;padding:2px;transition:border-color .3s}
+.cell::after{content:"";position:absolute;right:-.4rem;top:50%;width:.2rem;height:.4rem;margin-top:-.2rem;background:var(--muted);border-radius:0 2px 2px 0;transition:background-color .3s}
+.fill{height:100%;width:0%;background:var(--gold);border-radius:.15rem;box-shadow:0 0 8px var(--glow);transition:width .12s linear,background-color .3s,box-shadow .3s}
+.cell.full{border-color:var(--green)}
+.cell.full::after{background:var(--green)}
+.cell.full .fill{background:var(--green);box-shadow:0 0 12px var(--green-glow)}
+
 .burger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:4px;width:2.7rem;height:2.7rem;padding:0;background:var(--panel);color:var(--gold);border:1px solid var(--line2);border-radius:10px;cursor:pointer;transition:border-color .2s,box-shadow .2s}
 .burger:hover,.burger[aria-expanded="true"]{border-color:var(--gold);box-shadow:0 0 16px var(--glow)}
 .burger:active{transform:scale(.95)}
@@ -77,29 +83,57 @@ main{max-width:46rem;margin:0 auto;padding:0 1.25rem 4rem}
 .tile small{font:400 .72rem var(--mono);color:var(--muted);margin-top:-.4rem}
 .tile:hover,.tile.hot{border-color:rgba(255,215,0,.55);box-shadow:0 0 26px rgba(255,215,0,.2),inset 0 0 22px rgba(255,215,0,.05)}
 .tile:hover{transform:translateY(-2px)}
+.tile:active{transform:scale(.97)}
 
 /* content */
 .lead{color:var(--muted);margin:0 0 1.2rem}
-p.lead:first-of-type{margin-top:1.5rem;padding:1rem 1.15rem;border:1px solid var(--line);border-radius:12px;background:var(--panel);font-size:.92rem}
+.intro-box{margin-top:1.5rem;padding:1rem 1.15rem;border:1px solid var(--line);border-radius:12px;background:var(--panel);font-size:.92rem;color:var(--muted);display:flex;flex-direction:column;gap:.55rem}
+.intro-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding-top:.55rem;border-top:1px solid var(--line);font:400 .78rem var(--mono);color:var(--gold)}
 section{padding-top:3rem}
 h2{font:700 1.45rem/1.2 var(--display);letter-spacing:.1em;text-transform:uppercase;margin:0 0 .4rem;text-shadow:0 0 18px rgba(255,215,0,.22)}
-h3{font:600 .95rem/1.35 var(--display);letter-spacing:.04em;margin:0 0 .45rem}
-.tip{padding:1.1rem 1.25rem;background:var(--panel);border:1px solid var(--line);border-left:2px solid var(--gold);border-radius:12px;margin:0 0 .8rem;transition:box-shadow .18s,border-color .18s}
+h3{font:600 .95rem/1.35 var(--display);letter-spacing:.04em;margin:0 0 .45rem;display:flex;align-items:flex-start;justify-content:space-between;gap:.6rem}
+h3 .h3-title{display:inline}
+.tip{padding:1.1rem 1.25rem;background:var(--panel);border:1px solid var(--line);border-left:2px solid var(--gold);border-radius:12px;margin:0 0 .8rem;transition:box-shadow .18s,border-color .18s,opacity .25s}
 .tip:hover{border-color:var(--line2);border-left-color:var(--gold);box-shadow:0 0 22px rgba(255,215,0,.09)}
 .tip p{margin:.3rem 0}
 .tip ul{margin:.4rem 0 0;padding-left:1.2rem}
 .tip li{margin:.25rem 0}
 .tip b{color:var(--fg)}
-code{font-family:var(--mono);font-size:.8em;color:var(--gold);background:var(--wash);border:1px solid rgba(255,215,0,.18);padding:.12em .45em;border-radius:6px;word-break:break-word}
+
+/* per-tip done toggle */
+.tip-check{flex-shrink:0;width:1.65rem;height:1.65rem;margin-top:-.1rem;border-radius:6px;border:1px solid var(--line2);background:var(--panel2);color:var(--muted);font:600 .8rem var(--mono);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:border-color .15s,color .15s,background .15s,box-shadow .15s}
+.tip-check:hover{border-color:var(--gold);color:var(--fg)}
+.tip.tip-done{opacity:.58;border-left-color:var(--green)}
+.tip.tip-done:hover{opacity:.88;border-left-color:var(--green)}
+.tip.tip-done .tip-check{background:rgba(50,215,75,.14);border-color:var(--green);color:var(--green);box-shadow:0 0 10px rgba(50,215,75,.2)}
+
+/* copyable code paths */
+code{font-family:var(--mono);font-size:.8em;color:var(--gold);background:var(--wash);border:1px solid rgba(255,215,0,.18);padding:.12em .45em;border-radius:6px;word-break:break-word;position:relative;transition:border-color .15s,background .15s}
+code.copyable{cursor:pointer}
+code.copyable:hover{border-color:rgba(255,215,0,.55);background:rgba(255,215,0,.13)}
+code.copied{border-color:var(--green);color:var(--green);background:rgba(50,215,75,.12)}
+
 .note{background:var(--wash);border:1px solid rgba(255,215,0,.4);border-radius:12px;padding:1rem 1.15rem;margin:1.2rem 0;box-shadow:0 0 24px rgba(255,215,0,.1)}
 .note h3{color:var(--gold);margin-bottom:.2rem}
 .note p{margin:0}
 ol.steps{padding-left:1.3rem;margin:.5rem 0 0}
 ol.steps li{margin:.25rem 0}
 ol.steps li::marker{color:var(--gold);font-family:var(--mono)}
+
+/* interactive checklist */
+.recap-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.recap-meta{display:flex;align-items:center;gap:.65rem;font:400 .78rem var(--mono);color:var(--gold)}
+.btn-reset{background:transparent;color:var(--muted);border:1px solid var(--line2);border-radius:6px;padding:.15rem .55rem;font:400 .75rem var(--mono);cursor:pointer;transition:color .15s,border-color .15s}
+.btn-reset:hover{color:var(--fg);border-color:var(--gold)}
 .tick{list-style:none;padding:0;margin:.5rem 0 0}
-.tick li{padding:.55rem 0 .55rem 2rem;position:relative;border-bottom:1px solid var(--line)}
-.tick li::before{content:"";position:absolute;left:.2rem;top:.85rem;width:.85rem;height:.45rem;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg);filter:drop-shadow(0 0 4px var(--glow))}
+.tick li{padding:.7rem .6rem .7rem 2.4rem;position:relative;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;border-radius:8px;transition:background .15s,color .2s}
+.tick li:hover{background:var(--panel2)}
+.tick li::before{content:"";position:absolute;left:.5rem;top:50%;transform:translateY(-50%);width:1.15rem;height:1.15rem;border:1.5px solid var(--muted);border-radius:4px;transition:border-color .2s,background .2s,box-shadow .2s}
+.tick li::after{content:"";position:absolute;left:.75rem;top:50%;width:.65rem;height:.35rem;border-left:2px solid #000;border-bottom:2px solid #000;transform:translateY(-60%) rotate(-45deg) scale(0);transition:transform .2s cubic-bezier(.18,.89,.32,1.28)}
+.tick li.done{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(255,215,0,.4)}
+.tick li.done::before{background:var(--gold);border-color:var(--gold);box-shadow:0 0 10px var(--glow)}
+.tick li.done::after{transform:translateY(-60%) rotate(-45deg) scale(1)}
+
 .na{margin-top:1.2rem;padding:1rem 1.15rem;background:var(--panel);border:1px dashed var(--line2);border-radius:12px;color:var(--muted);font-size:.92rem}
 .na b{color:var(--fg)}
 footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--muted);font:400 .78rem/1.7 var(--mono)}
@@ -109,16 +143,13 @@ footer p{margin:.4rem 0}
 svg.hi{width:1.1em;height:1.1em;margin-right:.55rem;vertical-align:-.17em;fill:none;stroke:var(--gold);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
 .na svg.hi{stroke:var(--muted);vertical-align:-.22em}
+
 /* motion */
 @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 .hero h1{animation:rise .8s ease backwards}
 .hero p{animation:rise .8s .12s ease backwards}
 .tile{animation:rise .6s ease backwards}
 .tile:nth-child(1){animation-delay:.25s}.tile:nth-child(2){animation-delay:.33s}.tile:nth-child(3){animation-delay:.41s}.tile:nth-child(4){animation-delay:.49s}
-.tile:active{transform:scale(.97)}
-.brand img{transition:filter .2s,transform .2s}
-.brand:hover img{filter:drop-shadow(0 0 12px rgba(255,255,255,.65));transform:scale(1.06)}
-.navp a:hover{background:var(--panel2);box-shadow:0 0 14px rgba(255,215,0,.12)}
 .js .rv{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
 .js .tip.rv{transition:opacity .5s ease,transform .5s ease,box-shadow .18s,border-color .18s}
 .js .rv.in{opacity:1;transform:none}
@@ -141,7 +172,7 @@ h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
       <a href="#advanced" data-s="advanced"><svg class="i" viewBox="0 0 24 24"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 7l-2 10"/></svg>Advanced</a>
       <a href="#recap" data-s="recap"><svg class="i" viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg>Recap</a>
     </nav>
-    <div class="batt" aria-hidden="true"><span id="pct">0%</span><div class="cell"><div class="fill" id="fill"></div></div></div>
+    <div class="batt" id="batt" aria-hidden="true"><span id="pct">0%</span><div class="cell" id="cell"><div class="fill" id="fill"></div></div></div>
     <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -151,64 +182,71 @@ h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
     <h1><span class="l1">Make the 13&nbsp;mini</span> <span class="l2">Last.</span></h1>
     <p>Settings, charging habits and automations for the iPhone 13 mini. The battery in the corner fills as you read.</p>
     <nav class="tiles" aria-label="Guide sections">
-      <a class="tile hot" href="#basics"><svg class="i" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg><b>Basics</b><small>5 minutes</small></a>
-      <a class="tile" href="#charging"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 11v2M11 9l-2 3h3l-2 3"/></svg><b>Charging</b><small>ongoing</small></a>
-      <a class="tile" href="#advanced"><svg class="i" viewBox="0 0 24 24"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 7l-2 10"/></svg><b>Advanced</b><small>15+ minutes</small></a>
-      <a class="tile" href="#recap"><svg class="i" viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><b>Do these first</b><small>quick list</small></a>
+      <a class="tile hot" href="#basics" data-s="basics"><svg class="i" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg><b>Basics</b><small>5 minutes</small></a>
+      <a class="tile" href="#charging" data-s="charging"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 11v2M11 9l-2 3h3l-2 3"/></svg><b>Charging</b><small>ongoing</small></a>
+      <a class="tile" href="#advanced" data-s="advanced"><svg class="i" viewBox="0 0 24 24"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13 7l-2 10"/></svg><b>Advanced</b><small>15+ minutes</small></a>
+      <a class="tile" href="#recap" data-s="recap"><svg class="i" viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg><b>Do these first</b><small>checklist</small></a>
     </nav>
   </div>
 
-  <p class="lead">Menu names can shift between iOS versions. This guide was written on iOS 27. If a setting isn't where it says, use the search bar in Settings. No single tip is dramatic on its own: battery life comes from small savings adding up.</p>
+  <div class="intro-box">
+    <span>Menu names can shift between iOS versions. This guide was written on iOS 27. Tap any <code>Settings &gt; ...</code> path to copy the setting name for the Settings search bar, or tap <b>✓</b> on cards to track your progress. No single tip is dramatic on its own: battery life comes from small savings adding up.</span>
+    <div class="intro-bar">
+      <span id="tips-progress">0/22 tips marked done</span>
+      <button type="button" id="reset-tips" class="btn-reset" hidden>Reset tips</button>
+    </div>
+  </div>
 
   <section id="basics">
     <h2><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>Basics</h2>
     <p class="lead">Free settings anyone can change.</p>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M7 12l2.5 2.5L13 10"/></svg>Check your battery health first</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M7 12l2.5 2.5L13 10"/></svg>Check your battery health first</span></h3>
       <p><code>Settings &gt; Battery &gt; Battery Health &amp; Charging</code></p>
       <p>Maximum Capacity shows how much of the original capacity is left. If it has fallen well below 80%, no setting fully fixes it, and a battery replacement is the real solution.</p>
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-6"/></svg>Find what's draining your battery</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-6"/></svg>Find what's draining your battery</span></h3>
       <p><code>Settings &gt; Battery</code></p>
-      <p>Apple's battery screen shows each app's share of usage, with labels that explain why: Background Activity, Location, Home & Lock Screen (the display woken by notifications), and No Cell Coverage / Low Signal. Then fix the biggest offenders: limit Background App Refresh or Location for that app, turn off its notifications, or use Airplane Mode in low signal. Usage isn't shown while the phone is charging.</p>
+      <p>Apple's battery screen shows each app's share of usage, with labels that explain why: Background Activity, Location, Home &amp; Lock Screen (the display woken by notifications), and No Cell Coverage / Low Signal. Then fix the biggest offenders: limit Background App Refresh or Location for that app, turn off its notifications, or use Airplane Mode in low signal. Usage isn't shown while the phone is charging.</p>
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></svg>Use Dark Mode, dark apps and a mostly black wallpaper</h3>
-      <p><code>Settings &gt; Display &amp; Brightness &gt; Dark</code></p>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></svg>Use Dark Mode, dark apps and a mostly black wallpaper</span></h3>
+      <p><code>Settings &gt; Appearance &gt; Dark</code> (or <code>Settings &gt; Display &amp; Brightness &gt; Dark</code>)</p>
       <p>The 13 mini has an OLED display, where black pixels use almost no power. Pick a wallpaper that is mostly pure black (#000000) with some detail, and switch on dark or OLED themes in the apps that offer them. True black saves more than dark grey, which still lights the pixels. It only helps while the screen is on. A Purdue study of Android OLED phones found Dark Mode saved only 3% to 9% of power at 30% to 50% brightness, but 39% to 47% at full brightness, so keeping brightness low matters more.</p>
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19v-3M10 19v-7M15 19V8M20 19V4"/></svg>Cut back on 5G (LTE or 5G Auto)</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19v-3M10 19v-7M15 19V8M20 19V4"/></svg>Cut back on 5G (LTE or 5G Auto)</span></h3>
       <p><code>Settings &gt; Cellular &gt; Cellular Data Options &gt; Voice &amp; Data</code></p>
       <p>5G uses more power than LTE. In a Wall Street Journal test, an iPhone 13 mini lasted about 1.5 hours longer on LTE than on 5G while streaming video. 5G Auto trims some of that cost by using 5G only when it's worth it, but it still uses 5G part of the time, so LTE should save slightly more if you don't need 5G speeds. I couldn't find a direct 5G Auto versus LTE test, so the gap is probably smaller than the 5G versus LTE gap. Pick LTE if you never miss the speed, or 5G Auto if your LTE is weak or slow.</p>
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Tighten Location Services</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Tighten Location Services</span></h3>
       <p><code>Settings &gt; Privacy &amp; Security &gt; Location Services</code></p>
-      <p>Set apps to While Using or Never unless they truly need background access, like navigation. Turn off Precise Location for apps that only need your general area.</p>
+      <p>Set apps to While Using or Never unless they truly need background access, like navigation. Turn off Precise Location for apps that only need your general area. You can also scroll to the bottom and tap <code>Location Services &gt; System Services</code> to turn off unneeded background location reporting like Routing &amp; Traffic and iPhone Analytics (leave Find My iPhone and Emergency Calls &amp; SOS on).</p>
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>Other quick wins</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>Other quick wins</span></h3>
       <ul>
-        <li>Auto-Brightness (<code>Accessibility &gt; Display &amp; Text Size</code>) is a sensible default. Setting brightness low by hand can save more if you keep it low, since the screen is one of the biggest power draws. Lowering brightness is the biggest display lever: the same study found that going from 100% to 50% cuts the display's own power draw roughly tenfold.</li>
-        <li>Turn off Raise to Wake if the screen lights up when you don't need it.</li>
+        <li>Auto-Brightness (<code>Accessibility &gt; Display &amp; Text Size &gt; Auto-Brightness</code>) is a sensible default. Setting brightness low by hand can save more if you keep it low, since the screen is one of the biggest power draws. Lowering brightness is the biggest display lever: the same study found that going from 100% to 50% cuts the display's own power draw roughly tenfold.</li>
+        <li>Turn off Raise to Wake (<code>Settings &gt; Display &amp; Brightness &gt; Raise to Wake</code>) if the screen lights up when you don't need it.</li>
         <li>Trim notifications. Each one wakes the screen.</li>
         <li>Prefer Wi-Fi over cellular when it's available.</li>
         <li>Shorten Auto-Lock (<code>Settings &gt; Display &amp; Brightness &gt; Auto-Lock</code>) to 30 seconds or 1 minute so the screen doesn't stay on after you put the phone down.</li>
         <li>Keep iOS updated (<code>Settings &gt; General &gt; Software Update</code>). Apple says updates often include energy-saving technologies.</li>
         <li>Turn off keyboard haptics (<code>Settings &gt; Sounds &amp; Haptics &gt; Keyboard Feedback &gt; Haptic</code>). Apple says they may affect battery life, though not by how much.</li>
+        <li><b>Don't force-close apps</b> in the App Switcher. Apple's documentation and software chief Craig Federighi confirm that backgrounded apps are frozen in RAM and draw no power; swiping them away forces the CPU to reload them from scratch next time, which uses more energy. Only force-close an app if it's unresponsive.</li>
       </ul>
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M6 12h2"/></svg>Make Low Power Mode a habit</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M6 12h2"/></svg>Make Low Power Mode a habit</span></h3>
       <p>Low Power Mode cuts background activity such as mail fetching and background refresh, trims some visual effects and shortens Auto-Lock to 30 seconds. Some people keep it on all day, and one user reported still having about 50% left by 6pm with it always on. The trade-off is slower mail and delayed background updates.</p>
       <ul>
         <li>For one-tap control, add Low Power Mode to Control Center (<code>Settings &gt; Control Center</code>). Some people also put a Shortcuts toggle on the Lock Screen.</li>
@@ -223,23 +261,23 @@ h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
     <p class="lead">Slowing down battery aging.</p>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M10 9l-2 3h3l-2 3"/></svg>Leave Optimized Battery Charging on</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M10 9l-2 3h3l-2 3"/></svg>Leave Optimized Battery Charging on</span></h3>
       <p><code>Settings &gt; Battery &gt; Battery Health &amp; Charging</code></p>
       <p>It's on by default. It learns your routine and reduces the time the phone sits fully charged, while aiming for 100% when you usually unplug.</p>
     </article>
 
     <div class="note" role="note">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>The 13 mini has no true charge limit</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>The 13 mini has no true charge limit</span></h3>
       <p>The hard 80% Charge Limit exists only on iPhone 15 and newer. If your 13 mini says it's charging to 80%, that's Optimized Battery Charging pausing there and finishing to 100% later. It doesn't stop permanently.</p>
     </div>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2"/><circle cx="17" cy="17" r="2"/></svg>Optional: unplug around 80%</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2"/><circle cx="17" cy="17" r="2"/></svg>Optional: unplug around 80%</span></h3>
       <p>Lower charge levels put less stress on a lithium-ion cell, so this may reduce wear. The trade-off is less battery on hand, and how much it helps in practice is debated. In one MacRumors long-term test, a phone kept at an 80% limit held 94% capacity after 299 cycles, versus roughly 87% to 90% for phones without a limit. That's a small difference from one person's test. Treat it as an optional habit.</p>
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 14.8V5a2 2 0 10-4 0v9.8a4 4 0 104 0z"/></svg>Keep it cool</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 14.8V5a2 2 0 10-4 0v9.8a4 4 0 104 0z"/></svg>Keep it cool</span></h3>
       <p>Heat is the biggest enemy of the battery.</p>
       <ul>
         <li>Don't charge under a pillow, in a hot car, or in direct sun.</li>
@@ -249,17 +287,17 @@ h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Consider slower charging</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Consider slower charging</span></h3>
       <p>Faster chargers make more heat, and heat ages the battery. A slow 5W charger for routine or overnight charging keeps the phone cooler. Keep a faster one for days you need a quick top-up.</p>
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></svg>Wired charging runs cooler than wireless</h3>
-      <p>Wireless charging, MagSafe included, loses more energy as heat than a cable does. A "wired MagSafe" doesn't exist: magnetic battery packs and battery cases still charge the phone wirelessly. For long days out, a power bank with a cable is the cooler option. A MagSafe battery pack or battery case is more convenient and still helps, but expect more warmth.</p>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></svg>Wired charging runs cooler than wireless</span></h3>
+      <p>Wireless charging, MagSafe included, loses more energy as heat than a cable does. A "wired MagSafe" doesn't exist: magnetic battery packs and battery cases still charge the phone wirelessly. For long days out or CarPlay in the car, a cable is the cooler option. A MagSafe battery pack or battery case is more convenient and still helps, but expect more warmth.</p>
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M6 12h2"/></svg>Avoid draining to 0%</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M6 12h2"/></svg>Avoid draining to 0%</span></h3>
       <p>Regularly running the battery flat is harder on it than shallower cycles. Topping up during the day is fine. If you're storing a phone for months, Apple recommends leaving it at about 50% charge, powered off, in a cool place.</p>
     </article>
   </section>
@@ -269,7 +307,7 @@ h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
     <p class="lead">Background tuning and automations.</p>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 00-14-4M4 5v4h4M4 13a8 8 0 0014 4M20 19v-4h-4"/></svg>Reduce background activity</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 00-14-4M4 5v4h4M4 13a8 8 0 0014 4M20 19v-4h-4"/></svg>Reduce background activity</span></h3>
       <p>Apps that refresh in the background wake the phone and use power.</p>
       <ul>
         <li><code>Settings &gt; General &gt; Background App Refresh</code>: turn it off for apps that don't need it, or limit it to Wi-Fi. Some people turn it off for everything and say the phone works about the same, with apps updating only when opened.</li>
@@ -278,7 +316,19 @@ h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></svg>Automate Low Power Mode with Shortcuts</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242M12 12v9m-4-4 4 4 4-4"/></svg>Use Low Data Mode on cellular (or pause cellular photo sync)</span></h3>
+      <p><code>Settings &gt; Cellular &gt; Cellular Data Options &gt; Data Mode &gt; Low Data Mode</code></p>
+      <p>According to Apple's documentation, turning on Low Data Mode automatically disables Background App Refresh, stops automatic downloads and video autoplay, and pauses iCloud Photos updates and automatic backups while on cellular. If you only want to stop newly taken photos and 4K videos from immediately uploading over 5G/LTE, you can turn off <code>Settings &gt; Apps &gt; Photos &gt; Cellular Data</code> instead so uploads wait for Wi-Fi.</p>
+    </article>
+
+    <article class="tip">
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Use a Safari content blocker</span></h3>
+      <p><code>Settings &gt; Apps &gt; Safari &gt; Extensions</code></p>
+      <p>Mobile ads, trackers and auto-playing video scripts keep the CPU and radio active while browsing. Native Safari content blockers pass rules to WebKit ahead of time instead of running continuously in the background. In an automated 2-hour Safari browsing test by Wirecutter, an iPhone used 18% of its battery without an ad blocker and 9% with one enabled.</p>
+    </article>
+
+    <article class="tip">
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></svg>Automate Low Power Mode with Shortcuts</span></h3>
       <p>Shortcuts has no true "phone is idle" trigger. Use one of these instead: Sleep Focus, Time of Day, Battery Level (for example, below 30%), or Charger.</p>
       <ol class="steps">
         <li>Open <code>Shortcuts &gt; Automation &gt; New Automation</code>.</li>
@@ -292,15 +342,16 @@ h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
       </ul>
       <p>iOS turns Low Power Mode off by itself once the phone charges past about 80%, so charging can override the automation.</p>
     </article>
+
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6L7 7M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4"/></svg>Reduce White Point for an extra-dim screen</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6L7 7M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4"/></svg>Reduce White Point for an extra-dim screen</span></h3>
       <p><code>Settings &gt; Accessibility &gt; Display &amp; Text Size &gt; Reduce White Point</code></p>
       <p>It reduces the intensity of bright colors, so the screen can go dimmer than the normal minimum brightness. On an OLED a dimmer screen should draw less power, though the exact savings vary. The trade-off is that it's hard to read in sunlight, and a high value combined with minimum brightness can leave the screen too dark to read.</p>
       <p>For quick toggling, add it under <code>Settings &gt; Accessibility &gt; Accessibility Shortcut</code>, then triple-click the side button. One user runs it at 60%.</p>
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/><path d="M17 3v3M15.5 4.5h3"/></svg>Night and morning automations</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/><path d="M17 3v3M15.5 4.5h3"/></svg>Night and morning automations</span></h3>
       <p>Some people schedule a bedtime automation that turns off Wi-Fi and Bluetooth and turns on Low Power Mode and Airplane Mode, then reverses it at wake-up time (for example, Wi-Fi on and mobile data off at a workplace with good Wi-Fi and poor signal).</p>
       <ul>
         <li>Phones already use little power overnight, so the extra saving over Low Power Mode alone may be small.</li>
@@ -311,7 +362,7 @@ h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19v-3M10 19v-7M15 19V8M20 19V4"/></svg>Fight weak signal</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19v-3M10 19v-7M15 19V8M20 19V4"/></svg>Fight weak signal</span></h3>
       <p>A weak signal makes the cellular radio work harder and drains the battery. Apple recommends Airplane Mode in poor-coverage areas. Some other options:</p>
       <ul>
         <li><b>Wi-Fi Calling</b> (<code>Settings &gt; Phone &gt; Wi-Fi Calling</code>), if your carrier supports it, moves calls onto Wi-Fi where cellular coverage is poor.</li>
@@ -321,32 +372,40 @@ h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5z"/><path d="M9 4v13M15 6.5v13"/></svg>Download offline maps before a trip</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5z"/><path d="M9 4v13M15 6.5v13"/></svg>Download offline maps before a trip</span></h3>
       <p><code>Maps &gt; your profile picture &gt; Offline Maps &gt; Download New Map</code></p>
       <p>Download over Wi-Fi first. It helps most in areas with weak signal, where the cellular radio works hard. Navigation still uses GPS and the screen, which are the main drains, so the savings are modest. Maps take up storage.</p>
     </article>
 
     <article class="tip">
-      <h3><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>Small effects</h3>
+      <h3><span class="h3-title"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>Small or unproven effects</span></h3>
       <ul>
-        <li><b>Reduce Motion</b> (<code>Settings &gt; Accessibility &gt; Motion</code>) cuts screen animations. It's mainly a comfort setting, and its battery effect is small and unproven.</li>
-        <li><b>Connectivity Assist</b> (<code>Settings &gt; Wi-Fi</code>, scroll to the bottom; it was called Wi-Fi Assist under Cellular on iOS 26 and earlier) uses cellular data alongside Wi-Fi when Wi-Fi is slow or unusable. It's on by default if Wi-Fi Assist was on before you updated. Apple says it can use more cellular data, and some users report better battery life with it off, but I found no measurements. You can also turn it off for a single network. Worth a try, not proven.</li>
-        <li><b>Home screen widgets</b> get a limited refresh budget from iOS, so removing them saves little. Location-based widgets and Live Activities cost more.</li>
+        <li><b>Liquid Glass, Reduce Transparency &amp; Reduce Motion</b> (<code>Settings &gt; Appearance &gt; Liquid Glass</code> and <code>Settings &gt; Accessibility &gt; Display &amp; Text Size &gt; Reduce Transparency</code>): iOS 27 added a slider to make Liquid Glass more opaque. While many claim toning down Liquid Glass or enabling Reduce Transparency and Reduce Motion saves battery, a controlled 2.5-hour MacRumors test comparing Clear, Tinted, and Tinted with Reduce Transparency, Increase Contrast and Reduce Motion found all four runs finished within 1 percentage point of each other. Treat these as readability and comfort settings rather than proven battery savers.</li>
+        <li><b>Connectivity Assist</b> (<code>Settings &gt; Wi-Fi &gt; Connectivity Assist</code> at the bottom, or per network via the <code>(i)</code> button; it was called Wi-Fi Assist under Cellular on iOS 26 and earlier) uses cellular data alongside Wi-Fi when Wi-Fi is slow or unusable. It's on by default if Wi-Fi Assist was on before you updated. Apple says it can use more cellular data, and some users report better battery life with it off, but I found no controlled measurements. Worth a try if your home Wi-Fi is weak, not proven.</li>
+        <li><b>Widgets &amp; Live Activities:</b> Home screen widgets get a limited refresh budget from iOS, so removing them saves little. Location-based widgets and frequent Lock Screen Live Activities wake the screen and radios more often.</li>
       </ul>
     </article>
 
-    <div class="na"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/></svg><b>Doesn't apply to the 13 mini:</b> the built-in 80% Charge Limit slider (iPhone 15 and newer only) and Adaptive Power (iOS 26, needs iPhone 15 Pro or newer).</div>
+    <div class="na"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/></svg><b>Doesn't apply to the 13 mini:</b> the built-in 80% Charge Limit slider (iPhone 15 and newer only) and Adaptive Power (introduced in iOS 26, needs iPhone 15 Pro or newer).</div>
   </section>
 
   <section id="recap">
-    <h2><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg>Do these first</h2>
-    <ul class="tick">
-      <li>Check Battery Health.</li>
-      <li>Dark Mode, a mostly black wallpaper and dark app themes.</li>
-      <li>Cellular on LTE or 5G Auto.</li>
-      <li>Location Services on While Using or Never.</li>
-      <li>Background App Refresh off for apps that don't need it.</li>
-      <li>Keep the phone cool while charging.</li>
+    <div class="recap-head">
+      <h2><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg>Do these first</h2>
+      <div class="recap-meta">
+        <span id="check-progress">0/7 done</span>
+        <button type="button" id="reset-checks" class="btn-reset" hidden>Reset</button>
+      </div>
+    </div>
+    <p class="lead">Tap items as you configure them. Progress is saved on this device.</p>
+    <ul class="tick" id="checklist">
+      <li data-id="health" tabindex="0" role="checkbox" aria-checked="false">Check Battery Health.</li>
+      <li data-id="dark" tabindex="0" role="checkbox" aria-checked="false">Dark Mode, a mostly black wallpaper and dark app themes.</li>
+      <li data-id="cell" tabindex="0" role="checkbox" aria-checked="false">Cellular on LTE or 5G Auto.</li>
+      <li data-id="loc" tabindex="0" role="checkbox" aria-checked="false">Location Services on While Using or Never.</li>
+      <li data-id="bg" tabindex="0" role="checkbox" aria-checked="false">Background App Refresh off for apps that don't need it.</li>
+      <li data-id="lowdata" tabindex="0" role="checkbox" aria-checked="false">Low Data Mode on cellular (or pause cellular iCloud Photos sync).</li>
+      <li data-id="cool" tabindex="0" role="checkbox" aria-checked="false">Keep the phone cool while charging.</li>
     </ul>
   </section>
 
@@ -360,19 +419,45 @@ h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
 
 <script>
 (function(){
-  var fill=document.getElementById('fill'),pct=document.getElementById('pct'),btt=document.querySelector('.top');
-  var links=document.querySelectorAll('.navp a'),ids=['basics','charging','advanced','recap'];
+  var fill=document.getElementById('fill'),pct=document.getElementById('pct'),cell=document.getElementById('cell'),batt=document.getElementById('batt'),btt=document.querySelector('.top');
+  var links=document.querySelectorAll('.navp a'),tiles=document.querySelectorAll('.tiles .tile'),ids=['basics','charging','advanced','recap'];
+  var ticking=false;
+
   function update(){
     var d=document.documentElement,max=d.scrollHeight-window.innerHeight;
     var p=max>0?Math.min(100,Math.round(window.scrollY/max*100)):100;
-    fill.style.width=p+'%';pct.textContent=p+'%';btt.classList.toggle('show',window.scrollY>600);
+    fill.style.width=p+'%';
+    pct.textContent=p+'%';
+    var isFull=(p>=100);
+    cell.classList.toggle('full',isFull);
+    batt.classList.toggle('full',isFull);
+    btt.classList.toggle('show',window.scrollY>600);
+
     var cur='';
-    ids.forEach(function(id){var e=document.getElementById(id);if(e&&e.getBoundingClientRect().top<160)cur=id;});
+    ids.forEach(function(id){var e=document.getElementById(id);if(e&&e.getBoundingClientRect().top<180)cur=id;});
     if(max>0&&window.scrollY>=max-4)cur=ids[ids.length-1];
-    links.forEach(function(a){var on=a.getAttribute('data-s')===cur;a.classList.toggle('on',on);if(on)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');});
+    links.forEach(function(a){
+      var on=a.getAttribute('data-s')===cur;
+      a.classList.toggle('on',on);
+      if(on)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');
+    });
+    tiles.forEach(function(t){
+      var on=t.getAttribute('data-s')===(cur||'basics');
+      t.classList.toggle('hot',on);
+    });
   }
-  window.addEventListener('scroll',update,{passive:true});
-  window.addEventListener('resize',update);
+
+  function onScroll(){
+    if(!ticking){
+      window.requestAnimationFrame(function(){
+        update();
+        ticking=false;
+      });
+      ticking=true;
+    }
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll,{passive:true});
   update();
 
   /* mobile menu */
@@ -388,18 +473,142 @@ h2 svg.hi{width:1em;height:1em;filter:drop-shadow(0 0 6px var(--glow))}
   document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false);});
   window.addEventListener('resize',function(){if(window.innerWidth>700)setMenu(false);});
 
-  /* fade elements in as they enter the screen and out as they leave */
+  /* reveal elements once as they enter viewport */
   var items=document.querySelectorAll('.tip,.note,.na,section h2,section .lead,.tick li,footer p');
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){
-      es.forEach(function(e){e.target.classList.toggle('in',e.isIntersecting);});
-    },{rootMargin:'-6% 0px -6% 0px'});
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    },{rootMargin:'0px 0px -5% 0px'});
     items.forEach(function(el,i){
       el.classList.add('rv');
-      if(el.tagName==='LI')el.style.transitionDelay=((i%6)*50)+'ms';
+      if(el.tagName==='LI')el.style.transitionDelay=((i%7)*45)+'ms';
       io.observe(el);
     });
   }
+
+  /* tap-to-copy settings paths */
+  document.querySelectorAll('article.tip code').forEach(function(code){
+    var raw=code.textContent.trim();
+    if(raw.indexOf('>')===-1)return;
+    var parts=raw.split('>');
+    var target=parts[parts.length-1].trim();
+    code.classList.add('copyable');
+    code.setAttribute('role','button');
+    code.setAttribute('tabindex','0');
+    code.setAttribute('title','Tap to copy "' + target + '"');
+    function copy(){
+      if(!navigator.clipboard)return;
+      navigator.clipboard.writeText(target).then(function(){
+        var prev=code.textContent;
+        code.textContent='Copied: '+target;
+        code.classList.add('copied');
+        setTimeout(function(){
+          code.textContent=prev;
+          code.classList.remove('copied');
+        },1200);
+      });
+    }
+    code.addEventListener('click',copy);
+    code.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();copy();}
+    });
+  });
+
+  /* per-tip done checkboxes */
+  var tipKey='mini13_tips_v1';
+  var doneTips={};
+  try{doneTips=JSON.parse(localStorage.getItem(tipKey))||{};}catch(e){}
+  var allTips=document.querySelectorAll('article.tip');
+  var tipsProg=document.getElementById('tips-progress');
+  var resetTipsBtn=document.getElementById('reset-tips');
+
+  function updateTipsMeta(){
+    var count=0;
+    allTips.forEach(function(tip,idx){
+      var isDone=!!doneTips['t'+idx];
+      if(isDone)count++;
+      tip.classList.toggle('tip-done',isDone);
+      var btn=tip.querySelector('.tip-check');
+      if(btn)btn.setAttribute('aria-pressed',isDone?'true':'false');
+    });
+    if(tipsProg)tipsProg.textContent=count+'/'+allTips.length+' tips marked done';
+    if(resetTipsBtn)resetTipsBtn.hidden=(count===0);
+  }
+
+  allTips.forEach(function(tip,idx){
+    var h3=tip.querySelector('h3');
+    if(!h3)return;
+    var btn=document.createElement('button');
+    btn.type='button';
+    btn.className='tip-check';
+    btn.setAttribute('aria-label','Mark tip as done');
+    btn.textContent='✓';
+    btn.addEventListener('click',function(){
+      var key='t'+idx;
+      doneTips[key]=!doneTips[key];
+      try{localStorage.setItem(tipKey,JSON.stringify(doneTips));}catch(e){}
+      updateTipsMeta();
+    });
+    h3.appendChild(btn);
+  });
+
+  if(resetTipsBtn){
+    resetTipsBtn.addEventListener('click',function(){
+      doneTips={};
+      try{localStorage.removeItem(tipKey);}catch(e){}
+      updateTipsMeta();
+    });
+  }
+  updateTipsMeta();
+
+  /* bottom recap checklist */
+  var checkKey='mini13_checks_v1';
+  var savedChecks={};
+  try{savedChecks=JSON.parse(localStorage.getItem(checkKey))||{};}catch(e){}
+  var checkItems=document.querySelectorAll('#checklist li');
+  var checkProg=document.getElementById('check-progress');
+  var resetChecksBtn=document.getElementById('reset-checks');
+
+  function renderChecks(){
+    var doneCount=0;
+    checkItems.forEach(function(li){
+      var id=li.getAttribute('data-id');
+      var isDone=!!savedChecks[id];
+      if(isDone)doneCount++;
+      li.classList.toggle('done',isDone);
+      li.setAttribute('aria-checked',isDone?'true':'false');
+    });
+    if(checkProg)checkProg.textContent=doneCount+'/'+checkItems.length+' done';
+    if(resetChecksBtn)resetChecksBtn.hidden=(doneCount===0);
+  }
+
+  checkItems.forEach(function(li){
+    function toggle(e){
+      if(e&&e.target.closest('code'))return;
+      var id=li.getAttribute('data-id');
+      savedChecks[id]=!savedChecks[id];
+      try{localStorage.setItem(checkKey,JSON.stringify(savedChecks));}catch(err){}
+      renderChecks();
+    }
+    li.addEventListener('click',toggle);
+    li.addEventListener('keydown',function(e){
+      if(e.key===' '||e.key==='Enter'){e.preventDefault();toggle();}
+    });
+  });
+
+  if(resetChecksBtn){
+    resetChecksBtn.addEventListener('click',function(){
+      savedChecks={};
+      try{localStorage.removeItem(checkKey);}catch(e){}
+      renderChecks();
+    });
+  }
+  renderChecks();
 })();
 </script>
 </body>
