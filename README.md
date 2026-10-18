@@ -153,7 +153,7 @@ Download over Wi-Fi first. It helps most in areas with weak signal, where the ce
 
 ### Small effects
 - **Reduce Motion** (Settings > Accessibility > Motion) cuts screen animations. It's mainly a comfort setting, and its battery effect is small and unproven.
-- **Wi-Fi Assist** (Settings > Cellular > Wi-Fi Assist) switches to cellular when Wi-Fi is weak. Turning it off mainly saves mobile data, and its battery effect is unclear.
+- **Connectivity Assist** (Settings > Wi-Fi, scroll to the bottom; it was called Wi-Fi Assist under Cellular on iOS 26 and earlier) uses cellular data alongside Wi-Fi when Wi-Fi is slow or unusable. It's on by default if Wi-Fi Assist was on before you updated. Apple says it can use more cellular data, and some users report better battery life with it off, but I found no measurements. You can also turn it off for a single network. Worth a try, not proven.
 - **Home screen widgets** get a limited refresh budget from iOS, so removing them saves little. Location-based widgets and Live Activities cost more.
 
 ---
